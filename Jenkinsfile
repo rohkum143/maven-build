@@ -1,5 +1,5 @@
 node('master') {
-    def dockerImage = 'rtyler/jenkins-infra-builder'
+    def dockerImage = 'nginx:alpine'
 
     checkout scm
     docker.image(dockerImage).inside {
