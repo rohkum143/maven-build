@@ -1,3 +1,5 @@
+#!/bin/bash
+set -x
 if git rev-parse ${TAG} >/dev/null 2>&1
 then
     echo "Found ${TAG}"
