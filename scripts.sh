@@ -1,8 +1,8 @@
 #!/bin/bash
 set -x
-if git rev-parse ${TAG} >/dev/null 2>&1
+if git rev-parse test1 >/dev/null 2>&1
 then
-    echo "Found ${TAG}"
+    echo "Found test1"
     exit 1
 else
     echo "create tag for ${TAG}"
