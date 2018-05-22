@@ -1,7 +1,7 @@
 node('master') {
      sh " ls -ltra "
      TAG="test"
-     chmod a+x scripts.sh
-     ${pwd}/scripts.sh
+     sh " chmod a+x scripts.sh"
+     sh " ${pwd}/scripts.sh "
      }
 
