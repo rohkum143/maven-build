@@ -7,5 +7,5 @@ then
 else
     echo "create tag for $1"
     git tag $1
-    // git push origin test4
+    # git push origin test4
 fi
