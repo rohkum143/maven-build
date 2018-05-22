@@ -2,10 +2,10 @@
 set -x
 if git rev-parse $1 >/dev/null 2>&1
 then
-    echo "Found $1"
+    echo "$1 Tag already created "
     exit 1
 else
-    echo "create tag for $1"
+    echo "create tag $1 for this Job"
     git tag $1
     # git push origin test4
 fi
